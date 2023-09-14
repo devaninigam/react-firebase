@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"; 
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import firebasedb from '../firebasedb';
-
+import { toast } from 'react-toastify'
 const Signup = () => {
     const navigation = useNavigate();
     const [input, setInput] = useState({
@@ -11,22 +11,22 @@ const Signup = () => {
     });
 
     const Treact = (e) => {
-        setInput({...input, [e.target.name]: e.target.value });
+        setInput({ ...input, [e.target.name]: e.target.value });
     };
     const auth = getAuth(firebasedb);
-    const creat = () => { 
+    const creat = () => {
         createUserWithEmailAndPassword(auth, input.email, input.password)
             .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;
                 navigation('./login')
-                alert("ok") 
+                toast.success("Login success")
                 // ...
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                alert(errorMessage)
+                toast.error(errorMessage)
                 // ..
             });
     }

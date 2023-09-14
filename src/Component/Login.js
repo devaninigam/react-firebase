@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; 
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import firebasedb from '../firebasedb';
+import { toast } from 'react-toastify'; 
 
 
 const Login = () => {
@@ -21,14 +22,15 @@ const Login = () => {
     .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        navigation('/home')
-        alert("ok") 
+        navigation('/home') 
+        toast.success("Login success")
+
         // ...
     })
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert(errorMessage)
+        toast.error(errorMessage) 
         // ..
     });
 
