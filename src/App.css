@@ -1,38 +1,351 @@
-.App {
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.container {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-i {
+  max-width: 1200px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+a,
+link {
+  text-decoration: none;
+}
+
+.title {
+  margin: 20px 20px 40px;
+}
+.btn-transparent{
+  cursor: pointer;
+}
+.Green {
+  background-color: rgba(96, 203, 96, 0.504) !important;
+}
+
+.Green:hover {
+  background-color: rgb(7, 93, 7) !important;
+  transform: translateX(-30px) !important;
+}
+
+.Btn_style {
+  padding: 5px;
+  margin: 10px;
+  background-color: rgba(100, 148, 237, 0.501);
+  width: 200px;
   text-align: center;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Btn_style:hover {
+  background-color: rgb(13, 41, 93);
+  transform: translateX(30px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Btn_style:hover .link {
+  color: azure;
+  letter-spacing: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Btn_style .link {
+  font-size: 17px !important;
+  transition: all 0.5s;
+  color: black;
+}
+
+.passImg {
+  width: 400px;
+}
+
+.so_mide {
+  margin: 15px 17px;
+  background-color: rgba(62, 62, 234, 0.458);
+  border-radius: 50%;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.google {
+  transition: all 0.3s;
+}
+
+.so_mide .fa-brands {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.so_mide:hover .google {
+  background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+.so_mide:hover .fb {
+  background: #3976fb;
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+.so_mide:hover .apple {
+  background: #5c6171;
+  border-radius: 50%;
+  transform: scale(1.5);
+  color: rgb(222, 235, 246);
+}
+
+.mix {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 90vh;
 }
 
-.App-link {
-  color: #61dafb;
+.head {
+  margin-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login_h {
+  letter-spacing: 11px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.Boder {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black !important;
+  outline: none;
+  padding: 4px;
+  margin: 10px;
+}
+
+.frant {
+  margin-top: 35px !important;
+}
+
+.frant .link {
+  font-weight: 600 !important;
+  letter-spacing: 2px;
+}
+
+.frant:hover {
+  transform: scale(1.1) !important;
+  width: 250px;
+  font-weight: 300 !important;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+}
+
+.Signup-btn {
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+}
+
+.Signup-class:hover {
+  transform: scale(1.1);
+  width: 250px;
+}
+
+.Signup-class:hover .Signup-btn {
+  letter-spacing: 5px !important;
+  font-weight: 200 !important;
+}
+
+.container-i {
+  padding: 0 50px;
+}
+
+.navbar {
+  height: 15vh;
+  background-color: #ffeae0;
+  border-bottom: 1px solid rgba(118, 128, 114, 0.273);
+}
+
+.head-logo {
+  width: 150px;
+}
+
+.nevbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+
+.nav-ul {
+  display: flex;
+  padding-right: 100px;
+}
+
+.nav-ul .nav-manu {
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-ul .nav-manu .nav-text {
+  padding: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Banner {
+  height: 51vh;
+  padding: 130px 0;
+  background-color: #ffeae0;
+}
+
+.Banner .contant h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.contant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Banner .contant p {
+  padding-bottom: 30px;
+}
+
+.width {
+  max-width: max-content !important;
+  transform: scale(1.1);
+  width: 600px !important;
+}
+
+.medocone-text {
+  color: black;
+}
+
+.width:hover .medocone-text {
+  color: aliceblue;
+}
+ 
+
+.medicine-Store table {
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s;
+  border-radius: 20px;
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.medicine-Store table tr,
+.medicine-Store table th,
+.medicine-Store table td {
+  transition: all 0.2s;
+  padding: 20px;
+}
+
+table:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+.medicine-Store table tr:hover {
+  font-size: 30px;
+}
+.center-co{
+  background-color: #ffeae0;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-co1{
+  background-color: #ffeae0;
+  height: 15vh;
+}
+.center-co .text-fo{
+  font-size: 50px;
 }
